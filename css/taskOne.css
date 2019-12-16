@@ -1,0 +1,45 @@
+@charset "utf-8";
+body{
+    background-color: #F3F3F3;
+}
+#header{
+    width: 100%;
+    height: 266px;
+    background-color: #31485B;
+}
+.header-con{
+    position: relative;
+    /* border: 1px solid red; */
+    width: 370px;
+    height: 266px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header-con .title{
+    color: #FFFFFF;
+    font-size: 45px;
+    width: 250px;
+    margin: 0 auto 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #738391;
+}
+.header-con .subtitle{
+    color: #FFFFFF;
+    font-size: 13px;
+    letter-spacing: 6px;
+}
+.header-con .logo{
+    margin-top: 55px;
+}
+.header-con .free{
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+.header-con .free-con{
+    position: absolute;
+    top: 95px;
+    right: 20px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
