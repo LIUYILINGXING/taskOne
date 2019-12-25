@@ -83,3 +83,35 @@ bannerList.onmouseover = function(){
 bannerList.onmouseout = function(){
     auto = setInterval("change('right')",3000)
 }
+
+//输入框判断
+function check(i){
+    let aInput = document.querySelectorAll("input[type='input']")
+    let rule = "^[0-9]*$"
+    let pattern = new RegExp(rule)
+    let result = pattern.test(aInput[i].value);
+    
+    if(result){
+        aInput[i].className = "right"
+    }
+    else{
+        aInput[i].className = "false"
+    }
+    if(aInput[i].value == ""){
+        aInput[i].className = ""
+    }
+}
+
+//滑动条关联
+let rOrange = document.querySelector(".rOrange")
+let rPink = document.querySelector(".rPink")
+let slider1 = document.querySelector(".slider1")
+let slider2 = document.querySelector(".slider2")
+rOrange.oninput = function(){
+	let newValue = rOrange.value
+    slider1.innerHTML = `$${newValue}`
+}
+rPink.oninput = function(){
+    let newValue = rPink.value
+    slider2.innerHTML = `$${newValue}`
+}

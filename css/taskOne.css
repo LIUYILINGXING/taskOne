@@ -212,3 +212,265 @@ body{
 .dot>li.on{
     background-color: #f6b63a;
 }
+
+
+/* content */
+#content{
+    width: 938px;
+    height: 530px;
+    margin: 0 auto 58px;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+.button{
+    width: 880px;
+    height: 180px;
+    margin: 36px auto 30px;
+}
+.button>ul{
+    float: left;
+}
+.button>ul input{
+    outline: none;
+    border: 0;
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.green input{
+    background-color: #9cbf3e;
+}
+.green input:hover{
+    background-color: #a8c755;
+}
+.green input:active{
+    background-color: #86a72e;
+}
+.orange input{
+    background-color: #ef8742;
+}
+.orange input:hover{
+    background-color: #f19659;
+}
+.orange input:active{
+    background-color: #d76f31;
+}
+.pink input{
+    background-color: #bf4f79;
+}
+.pink input:hover{
+    background-color: #c76489;
+}
+.pink input:active{
+    background-color: #a54066;
+}
+.purple input{
+    background-color: #8869ca;
+}
+.purple input:hover{
+    background-color: #967bd0;
+}
+.purple input:active{
+    background-color: #7557b4;
+}
+
+/* 多选框、单选框 */
+.form{
+    height: 172px;
+    width: 880px;
+    margin: 0 auto;
+}
+.form>ul{
+    float: left;
+    height: 160px;
+    width: 202px;
+    margin: 0 9px;
+}
+.form span{
+    vertical-align: middle;
+}
+label{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-color: #fff;
+    
+    border: 1px solid #aaa;
+}
+.checkbox li,.radio li{
+    margin-bottom: 12px;
+}
+.checkbox label{
+    border-radius: 5px;
+}
+.radio label{
+    border-radius: 50%;
+}
+input[type="checkbox"]:checked + label{
+    background: url("../image/content/checked.png") no-repeat center;
+    border: 1px solid #1bb869;
+}
+input[type="checkbox"]:checked + label + span{
+    color: #1bb869;
+}
+input[type="checkbox"]:hover + label{
+    background: url("../image/content/hover.png") no-repeat center;
+    border: 1px solid #aaaaaa;
+}
+
+input[type="radio"]:checked + label{
+    background: url("../image/content/radio-on.png") no-repeat center;
+    border: 1px solid #1bb869;
+}
+input[type="radio"]:checked + label + span{
+    color: #1bb869;
+}
+input[type="radio"]:hover + label{
+    background: url("../image/content/radio-hover.png") no-repeat center;
+    border: 1px solid #aaaaaa;
+}
+
+/* 输入框 */
+.input input{
+    outline: none;
+    width: 184px;
+    height: 40px;
+    padding-left: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #d7d7d7;
+}
+.input .right{
+    border: 1px solid #1bb869;
+    background: url("../image/content/right.png") no-repeat 170px;
+}
+.input .false{
+    border: 1px solid #e05543;
+    background: url("../image/content/error.png") no-repeat 170px;
+}
+
+/* 滑动条 */
+/* 去除默认样式 */
+input[type="range"]{
+    outline: none;
+    width: 200px;
+    height: 6px;
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+input[type="range"].rOrange{
+    margin-top: 16px;
+    margin-bottom: 50px;
+}
+input[type="range"].rPink{
+    margin-bottom: 16px;
+}
+/* 给滑块添加样式 */
+input[type=range].rOrange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 21px;
+    width: 115px;
+    background:url("../image/content/slider1.png"); 
+}
+input[type=range].rPink::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 21px;
+    width: 115px;
+    background:url("../image/content/slider2.png"); 
+}
+
+/* 滑动条显示框 */
+.range span{
+    display: inline-block;
+    width: 84px;
+    height: 38px;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 38px;
+    color: #888888;
+}
+.range img{
+    margin: 0 1px;
+}
+
+/* content底部 */
+.curiouser{
+    display: flex;
+    justify-content: space-between;
+    height: 46px;
+    width: 880px;
+    margin: 34px auto 0;
+}
+.curiouser li{
+    width: 200px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 14px;
+    color: #888888;
+    
+}
+.curiouser li:nth-child(1){
+    background: url("../image/content/base-green.png");
+}
+.curiouser li:nth-child(2){
+    background: url("../image/content/base-orange.png");
+}
+.curiouser li:nth-child(3){
+    background: url("../image/content/base-pink.png");
+}
+.curiouser li:nth-child(4){
+    background: url("../image/content/base-purple.png");
+}
+
+/* discount */
+.discount{
+    display: flex;
+    justify-content: space-between;
+    width: 622px;
+    margin: 0 auto;
+}
+.discount li{
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+}
+.discount li:nth-child(1){
+    background: url("../image/discount/discount1.png");
+}
+.discount li:nth-child(2){
+    background: url("../image/discount/discount2.png");
+}
+.discount li:nth-child(3){
+    background: url("../image/discount/discount3.png");
+}
+.discount li:nth-child(4){
+    background: url("../image/discount/discount4.png");
+}
+.discount li:nth-child(5){
+    background: url("../image/discount/discount5.png");
+}
+.discount li:nth-child(6){
+    background: url("../image/discount/discount6.png");
+}
+.discount li:nth-child(7){
+    background: url("../image/discount/discount7.png");
+}
+.discount li:nth-child(8){
+    background: url("../image/discount/discount8.png");
+}
